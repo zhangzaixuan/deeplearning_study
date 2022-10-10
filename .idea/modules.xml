@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/dl_test.iml" filepath="$PROJECT_DIR$/.idea/dl_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/deeplearing_knowledgegraph.iml" filepath="$PROJECT_DIR$/.idea/deeplearing_knowledgegraph.iml" />
     </modules>
   </component>
 </project>
