@@ -1,6 +1,6 @@
 ##公式测试
 
 $$
-\alpha+\beta
+\alpha+\beta+λ+θ
 
 $$
