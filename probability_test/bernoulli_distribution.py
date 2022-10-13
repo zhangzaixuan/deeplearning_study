@@ -1,6 +1,7 @@
 from scipy.stats import binom
 import matplotlib.pyplot as plt
 import numpy as np
+
 # 'SimHei' windows 中文标签 'Songti SC', 'STFangsong' mac 宋体和仿宋字体
 plt.rcParams['font.sans-serif'] = ['SimHei', 'Songti SC', 'STFangsong']
 # 用来正常显示负号
@@ -23,5 +24,5 @@ plt.title('binomail 伯努利分布：n=%i,p=%0.2f' % (n, p), fontsize=15)
 plt.xlabel('随机变量 number of success x')
 plt.ylabel('概率值 proaibility of success p')
 # plt.show()
-plt.savefig('./binomail.png')
+plt.savefig('./distribution_img/binomail.png')
 plt.pause(1)

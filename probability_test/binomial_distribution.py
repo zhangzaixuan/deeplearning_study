@@ -20,5 +20,5 @@ for prob in range(3, 10, 3):
     plt.title("binomial distribution 二项式分布")
     plt.legend()
 
-plt.savefig('./binomial distribution.png')
+plt.savefig('./distribution_img/binomial_distribution.png')
 plt.pause(1)
