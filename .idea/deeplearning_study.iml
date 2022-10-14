@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/sklearn_test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/taylor_test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/probability_test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/probability_test/distribution_img" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />
