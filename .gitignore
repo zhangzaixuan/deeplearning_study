@@ -108,7 +108,8 @@ celerybeat.pid
 # Environments
 .env
 .venv
-.idea
+#.idea only ignore,note remove already exists
+/.idea
 env/
 venv/
 ENV/
