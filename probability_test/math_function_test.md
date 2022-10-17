@@ -9,3 +9,8 @@ $$
 \sum_{i=1}^{n}(x-\overline{x})
 
 $$
+
+$$
+\sum_{i=1}^{n}x_i
+
+$$
