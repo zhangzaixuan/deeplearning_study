@@ -57,7 +57,7 @@ kelaoban    98
 Name: login, dtype: object <class 'pandas.core.series.Series'>
 98 <class 'str'>
 """
-# 填充缺省值
+# 005填充缺省值
 df_emp_ori = pd.DataFrame([[np.nan, 3, 0], [2, np.nan, 0], [1, 0, np.nan]], columns=list('abc'))
 print(df_emp_ori)
 print(df_emp_ori.isnull)
@@ -68,3 +68,39 @@ print(df_emp_ori.fillna(method='ffill'))
 print(df_emp_ori.fillna(df_emp_ori.mean()))
 values = {'a': 1, 'b': 2, 'c': 3}
 print(df_emp_ori.fillna(value=values))
+
+# 006 apply 伴生函数,类似于udf user-define-function 用户自定义函数
+print("=====")
+print(type(df_example['brand']))
+df_example_apply = df_example['brand'].apply(str.upper)
+print(df_example_apply)
+
+
+def get_circle_area_df(x):
+    pai = 3.1415926
+    return pai * x * x
+
+
+circle_ori_df = pd.DataFrame({
+    'brand_name': ['small_circle', 'middle_circle', 'big_circle', 'huge_circle'],
+    'length': [1, 3, 5, 100]
+})
+# 直接将apply函数计算结果值关联到原有数据集上，dataframe的内建函数会将相同row_id(内置)的数据拼接在一起；
+circle_ori_df['circle_area'] = circle_ori_df['length'].apply(get_circle_area_df)
+print(circle_ori_df)
+
+
+# 复杂函数应用
+def extra_info(df):
+    # df['upper_name'] = (df['brand_name']).apply(lambda x: str.upper(x))
+    df['upper_name'] = str.upper(df['brand_name'])
+    df['doubling_area'] = (df['circle_area'] * 2.0)
+    return df
+
+
+extra_info_df = circle_ori_df.apply(extra_info, axis=1)
+
+circle_ori_df = circle_ori_df[['brand_name', 'circle_area']].apply(lambda x: len(x))
+
+print(extra_info_df)
+print(circle_ori_df)
