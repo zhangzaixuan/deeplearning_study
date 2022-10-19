@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/probability_test/distribution_img" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/data_processing" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/data_processing/preprocessing_img" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/data_processing/pandas_data_translate" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />

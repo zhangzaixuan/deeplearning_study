@@ -14,7 +14,7 @@ A = np.array([[1, 2], [3, 4]])
 B = np.array([[1, 1], [1, 1]])
 print(A + B)
 print(A - B)
-
+  
 # 矩阵A和B，需要A的列数等于B的行数 C=AxB，Amxn,Bnxs Cmxs cij=ai1b1j+ai2b2j+......+ainbnj
 
 A1 = np.mat([[1, 2, 3], [4, 5, 6]])
