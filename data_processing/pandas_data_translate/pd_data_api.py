@@ -104,3 +104,5 @@ circle_ori_df = circle_ori_df[['brand_name', 'circle_area']].apply(lambda x: len
 
 print(extra_info_df)
 print(circle_ori_df)
+
+
