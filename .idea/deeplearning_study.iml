@@ -13,6 +13,8 @@
       <sourceFolder url="file://$MODULE_DIR$/data_processing" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/data_processing/preprocessing_img" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/data_processing/pandas_data_translate" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bayes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/knn" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />
