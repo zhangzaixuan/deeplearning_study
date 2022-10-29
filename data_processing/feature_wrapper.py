@@ -1,7 +1,6 @@
 from sklearn.feature_selection import RFE
 from sklearn.linear_model import LogisticRegression
 from sklearn.datasets import load_iris
-ßß
 """
 wrapper包装，通过预测模型效果评分，每次剔除质量不太好的特征，保留权值系数和目标或者结果关联性比较好的特征，
 其实就是将权重系数比较低的特征移除，因为移除这部分特征，预测和实际的模型效果本身的拟合度偏离很小

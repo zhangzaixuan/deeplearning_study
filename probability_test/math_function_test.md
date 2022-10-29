@@ -22,5 +22,7 @@ $$
 
 $$
 \sum_{i=1}^{n}(A-T)²/T
+\emptyset \varnothing
+\sigma
 
 $$
